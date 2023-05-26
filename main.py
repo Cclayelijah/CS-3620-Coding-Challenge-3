@@ -43,3 +43,15 @@ laptop.displayspecs()
 pc.getspecs(2500, 32, 8)
 pc.displayspecs()
 
+# Part 5
+class Number:
+    def __init__(self, x):
+        self.x = x
+    def __mul__(self, other):
+        x = self.x + other
+        return x
+
+print("Part 5:")
+num = Number(5)
+result = num * 5
+print ("5 * 5 = " + str(result))
